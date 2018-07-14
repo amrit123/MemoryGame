@@ -12,3 +12,8 @@ or
 -user can select the card and the back face of the card will show
 -if both cards are same,will show X image icon
 -user can continue to other selection
+-works for single user at the moment
+
+## future task
+-have two different player and point score for each correct pair and declare the winner at the end
+-make the card flip animation better
