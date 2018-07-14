@@ -2,7 +2,7 @@
  
 body {
   margin: 20px 0;
-   background: rgb(24, 25, 27);
+  /*  background: rgb(24, 25, 27); */
 }
 
 .grid {
@@ -76,4 +76,46 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.welcome{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+text-align: center;
+margin: 0;
+
+    padding: 0;
+    border: 0;
+}
+.button{
+  display: block;
+   margin: 0 auto;
+}
+.game-on{
+  text-align: center;
+  visibility: hidden;
+}
+.players{
+
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+ 
+}
+.input-1,.input-2{
+  width:50px;
+}
+.hr,.players,.button-start{
+  visibility: hidden;
+}
+.game-over{
+  visibility: hidden;
+  text-align: center;
+  color: red;
+}
+.button-start{
+  display: block;
+  margin: 0 auto;
 }
