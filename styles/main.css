@@ -1,0 +1,80 @@
+ 
+ 
+body {
+  margin: 20px 0;
+   background: #6589F9;
+}
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* .card {
+  margin: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+}  */
+
+
+.card {
+  position: relative;
+  transition: all .4s linear;
+  transform-style: preserve-3d;
+  margin: 10px;
+  
+}
+
+.back-face,
+.front-face {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card,
+.back-face,
+.front-face {
+  height: 140px;
+  width: 100px;
+  
+}
+
+
+.front-face {
+  z-index: 2;
+  background:url('../img/redBack.jpg') no-repeat center center / contain;
+  background-size: 100%
+}
+
+.selected {
+    /* border: 4px solid blue; */
+    transform: rotateY(180deg);
+  } 
+  /* .match {
+    border: 4px solid red;
+  } */ 
+  .match .front-face {
+    z-index: 2;
+  background:url('../img/cross.png') no-repeat center center / contain;
+  background-size: 100%
+  /*   background: rgb(4, 235, 16) !important; */
+  }
+
+  
+
+
+
+
+.back-face {
+  transform: rotateY(180deg);/* this will show the front face initiallly which is back of the card in our case */
+  
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
